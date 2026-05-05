@@ -1,0 +1,99 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# ============================================
+# Data & Models (大型生成文件)
+# ============================================
+# Raw data
+/data/raw/
+
+# Generated outputs (models, predictions, plots)
+/data/output/
+/data/processed/
+/data/interim/
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.pt
+*.pth
+*.onnx
+
+# Serialized data
+*.npy
+*.npz
+
+# ============================================
+# Logs & Temporary Files
+# ============================================
+*.log
+*.tmp
+*.temp
+*.out
+*.err
+nul
+
+# ============================================
+# IDEs & Editors
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini

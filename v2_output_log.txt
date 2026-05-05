@@ -1,0 +1,8 @@
+[Checkpoint 1] 数据加载与远期价格计算
+  - 原始记录数: 343158
+  - 交易日数: 2667
+  - 唯一合约数: 4856
+  - F_implied 计算成功率: 10667/10668 (100.0%)
+  - |F_implied - F_theory| median=0.0099, max=0.2937
+
+[Checkpoint 2] M-W空间B-Spline拟合
