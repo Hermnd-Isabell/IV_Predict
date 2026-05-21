@@ -1,0 +1,40 @@
+# Data files (large)
+data/
+output/
+
+# Logs
+*.log
+run_*.log
+vae_*.log
+kan_*.log
+gru_*.log
+resnet_*.log
+spx_*.log
+
+# Temporary / garbage files
+nul
+NUL
+*.pid
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Model artifacts (redundant with npz/pt rules in parent)
+*.pt
+*.pth
+*.npz
+*.npy
+*.pkl
+*.parquet
+
+# LaTeX build artifacts
+slides/*.aux
+slides/*.log
+slides/*.nav
+slides/*.out
+slides/*.snm
+slides/*.toc
+slides/*.pdf
+slides/NUL
+slides/compile*.log

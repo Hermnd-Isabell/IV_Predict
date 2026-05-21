@@ -1,0 +1,38 @@
+{
+    "description": "GRU 验证配置：GRU + MLP",
+    "data": {
+        "grid_path": "output/spx_step0/daily_grid_154.parquet",
+        "raw_path": "data/raw/spx_options.csv",
+        "output_step1": "output/spx_step1_gru",
+        "output_step2": "output/spx_step2_gru"
+    },
+    "step1": {
+        "model_type": "gru",
+        "model_kwargs": {
+            "hidden_dim": 12,
+            "num_layers": 1,
+            "dropout": 0.0
+        },
+        "output_activation": "relu",
+        "train_kwargs": {
+            "epochs": 200,
+            "batch_size": 128,
+            "lr": 0.01,
+            "optimizer": "adam"
+        }
+    },
+    "step2": {
+        "model_type": "mlp",
+        "model_kwargs": {
+            "hidden_dim": 50
+        },
+        "output_activation": "softplus",
+        "train_kwargs": {
+            "epochs": 20,
+            "batch_size_days": 32,
+            "lr": 0.001,
+            "lambda_penalty": 1.0,
+            "optimizer": "adam"
+        }
+    }
+}
